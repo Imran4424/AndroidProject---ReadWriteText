@@ -99,7 +99,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int getScore() {
+
+        try {
+            FileInputStream fileInputStream = openFileInput(SCORE_TXT);
+            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
+
+            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+            StringBuffer stringBuffer = new StringBuffer();
+
+            String scoreStr;
+            while ((scoreStr = bufferedReader.readLine()) != null) {
+                stringBuffer.append(scoreStr);
+            }
+
+            savedText.setText(stringBuffer.toString());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         int score;
+
 
         return score;
     }

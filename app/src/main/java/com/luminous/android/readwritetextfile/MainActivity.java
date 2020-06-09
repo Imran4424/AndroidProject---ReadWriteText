@@ -93,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
         int score = getScore();
         score++;
         setScore(score);
+        
     }
 
     public void decrementScore(View view) {

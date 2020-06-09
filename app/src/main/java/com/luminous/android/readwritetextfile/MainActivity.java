@@ -27,5 +27,7 @@ public class MainActivity extends AppCompatActivity {
         currentScore = (TextView) findViewById(R.id.scoreText);
         saveButton = (Button) findViewById(R.id.saveButton);
         loadButton = (Button) findViewById(R.id.loadButton);
+        incrementButton = (Button) findViewById(R.id.incrementButton);
+        decrementButton = (Button) findViewById(R.id.decrementButton);
     }
 }

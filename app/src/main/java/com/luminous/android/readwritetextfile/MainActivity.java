@@ -43,8 +43,6 @@ public class MainActivity extends AppCompatActivity {
         decrementButton = (Button) findViewById(R.id.decrementButton);
         resetButton = (Button) findViewById(R.id.resetButton);
 
-        // init the score
-        setScore(0);
     }
 
     public void saveString(View view) {
@@ -147,5 +145,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        currentScore.setText(scoreToSave);
     }
 }

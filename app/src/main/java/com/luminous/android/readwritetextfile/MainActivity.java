@@ -118,8 +118,14 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        } catch(NumberFormatException nfe) {
+            System.out.println("Could not parse " + nfe);
         }
 
         return score;
+    }
+
+    private void setScore(int score) {
+
     }
 }

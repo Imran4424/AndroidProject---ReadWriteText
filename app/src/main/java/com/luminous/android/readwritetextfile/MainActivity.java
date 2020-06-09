@@ -23,5 +23,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         inputString = (EditText) findViewById(R.id.inputText);
+        savedText = (TextView) findViewById(R.id.savedText);
     }
 }

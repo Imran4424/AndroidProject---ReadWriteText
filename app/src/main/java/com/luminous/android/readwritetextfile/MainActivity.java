@@ -3,6 +3,7 @@ package com.luminous.android.readwritetextfile;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -31,5 +32,29 @@ public class MainActivity extends AppCompatActivity {
         incrementButton = (Button) findViewById(R.id.incrementButton);
         decrementButton = (Button) findViewById(R.id.decrementButton);
         resetButton = (Button) findViewById(R.id.resetButton);
+    }
+
+    public void saveString(View view) {
+        writeFile();
+    }
+
+    private void writeFile() {
+        String textToSave
+    }
+
+    public void loadString(View view) {
+
+    }
+
+    public void incrementScore(View view) {
+
+    }
+
+    public void decrementScore(View view) {
+
+    }
+
+    public void resetScore(View view) {
+
     }
 }

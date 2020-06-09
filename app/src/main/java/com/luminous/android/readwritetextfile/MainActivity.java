@@ -102,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void resetScore(View view) {
+        // 0 - default score
         setScore(0);
     }
 

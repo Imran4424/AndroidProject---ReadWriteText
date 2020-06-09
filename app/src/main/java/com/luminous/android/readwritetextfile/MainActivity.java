@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void resetScore(View view) {
-
+        setScore(0);
     }
 
     private int getScore() {

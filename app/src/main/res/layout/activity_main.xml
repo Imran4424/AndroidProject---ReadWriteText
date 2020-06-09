@@ -85,7 +85,7 @@
             android:textSize="36sp" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/scoreText"
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_weight="1"

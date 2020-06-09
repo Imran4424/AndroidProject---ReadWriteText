@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Button loadButton;
     Button incrementButton;
     Button decrementButton;
+    Button resetButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,5 +30,6 @@ public class MainActivity extends AppCompatActivity {
         loadButton = (Button) findViewById(R.id.loadButton);
         incrementButton = (Button) findViewById(R.id.incrementButton);
         decrementButton = (Button) findViewById(R.id.decrementButton);
+    
     }
 }

@@ -77,6 +77,8 @@ public class MainActivity extends AppCompatActivity {
             while ((lines = bufferedReader.readLine()) != null) {
                 stringBuffer.append(lines + "\n");
             }
+
+            savedText.setText(stringBuffer.toString());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

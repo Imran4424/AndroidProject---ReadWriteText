@@ -87,11 +87,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void incrementScore(View view) {
-
+        int score = getScore();
+        score++;
+        setScore(score);
     }
 
     public void decrementScore(View view) {
+        int score = getScore();
+        if(score > 0) {
+            score--;
+        }
 
+        setScore(score);
     }
 
     public void resetScore(View view) {

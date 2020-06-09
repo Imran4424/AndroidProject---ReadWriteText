@@ -126,6 +126,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setScore(int score) {
+        String scoreToSave = String.valueOf(score);
 
+        try {
+            FileOutputStream fileOutputStream = openFileOutput(STRING_TXT, MODE_PRIVATE);
+            fileOutputStream.write(scoreToSave.getBytes());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

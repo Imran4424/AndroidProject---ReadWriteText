@@ -99,6 +99,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int getScore() {
-        
+        int score;
+
+        return score;
     }
 }

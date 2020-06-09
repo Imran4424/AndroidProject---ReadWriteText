@@ -12,12 +12,13 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String STRING_TXT = "String.txt";
     private static final String SCORE_TXT = "Score.txt";
-    
+
     EditText inputString;
     TextView savedText;
     TextView currentScore;
@@ -66,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
     private void readFile() {
         try {
             FileInputStream fileInputStream = openFileInput(STRING_TXT);
+            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

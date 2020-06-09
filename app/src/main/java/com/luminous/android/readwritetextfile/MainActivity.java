@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         decrementButton = (Button) findViewById(R.id.decrementButton);
         resetButton = (Button) findViewById(R.id.resetButton);
 
+        // initialize the score UI
+        setScore(getScore());
     }
 
     public void saveString(View view) {
@@ -138,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
         String scoreToSave = String.valueOf(score);
 
         try {
-            FileOutputStream fileOutputStream = openFileOutput(STRING_TXT, MODE_PRIVATE);
+            FileOutputStream fileOutputStream = openFileOutput(SCORE_TXT, MODE_PRIVATE);
             fileOutputStream.write(scoreToSave.getBytes());
         } catch (FileNotFoundException e) {
             e.printStackTrace();

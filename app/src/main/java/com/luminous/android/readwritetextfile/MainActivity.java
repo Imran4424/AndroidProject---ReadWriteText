@@ -42,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
         incrementButton = (Button) findViewById(R.id.incrementButton);
         decrementButton = (Button) findViewById(R.id.decrementButton);
         resetButton = (Button) findViewById(R.id.resetButton);
+
+        // init the score
+        setScore(0);
     }
 
     public void saveString(View view) {

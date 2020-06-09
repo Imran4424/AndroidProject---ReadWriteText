@@ -83,6 +83,7 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_weight="0.75"
+            android:onClick="incrementScore"
             android:text="+"
             android:textSize="36sp" />
 

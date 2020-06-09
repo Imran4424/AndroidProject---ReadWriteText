@@ -94,7 +94,7 @@
             android:textSize="36sp" />
 
         <Button
-            android:id="@+id/decrementButton "
+            android:id="@+id/decrementButton"
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_weight="0.75"

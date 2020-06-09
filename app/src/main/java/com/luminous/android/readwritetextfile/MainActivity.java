@@ -8,8 +8,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 public class MainActivity extends AppCompatActivity {
 
+    private static final String STRING_TXT = "String.txt";
+    private static final String SCORE_TXT = "Score.txt";
+    
     EditText inputString;
     TextView savedText;
     TextView currentScore;
@@ -39,11 +47,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void writeFile() {
-        String textToSave
+        String textToSave = inputString.getText().toString();
+
+        try {
+            FileOutputStream fileOutputStream = openFileOutput(STRING_TXT, MODE_PRIVATE);
+            fileOutputStream.write(textToSave.getBytes());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void loadString(View view) {
+        readFile();
+    }
 
+    private void readFile() {
+        try {
+            FileInputStream fileInputStream = openFileInput(STRING_TXT);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public void incrementScore(View view) {

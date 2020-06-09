@@ -30,6 +30,6 @@ public class MainActivity extends AppCompatActivity {
         loadButton = (Button) findViewById(R.id.loadButton);
         incrementButton = (Button) findViewById(R.id.incrementButton);
         decrementButton = (Button) findViewById(R.id.decrementButton);
-    
+        resetButton = (Button) findViewById(R.id.resetButton);
     }
 }
